@@ -1,0 +1,13 @@
+.link {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.link:hover {
+  color: olivedrab;
+}
+
+.active {
+  background-color: brown;
+}
