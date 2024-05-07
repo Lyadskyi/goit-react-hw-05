@@ -1,0 +1,15 @@
+.notFound {
+  font-size: 20px;
+  color: #f60401;
+}
+
+.backHome {
+  font-size: 22px;
+  color: #dc0909;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}

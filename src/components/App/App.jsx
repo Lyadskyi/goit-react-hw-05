@@ -1,18 +1,21 @@
 import { Routes, Route } from "react-router-dom";
+import Layout from "../Layout/Layout";
 import HomePage from "../../pages/HomePage/HomePage";
-import AboutPage from "../../pages/AboutPage/AboutPage";
-import Navigation from "../Navigation/Navigation";
+import MoviesPage from "../../pages/MoviesPage/MoviesPage";
+import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
+import css from "./App.module.css";
 
 export default function App() {
   return (
     <>
-      <h1>Trending today</h1>
-
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-      </Routes>
+      <Layout>
+        <h1 className={css.heading}>Trending today</h1>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/movies" element={<MoviesPage />}></Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
+        </Routes>
+      </Layout>
     </>
   );
 }
