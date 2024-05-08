@@ -12,10 +12,10 @@ export default function App() {
       <Layout>
         <h1 className={css.heading}>Trending today</h1>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/movies" element={<MoviesPage />}></Route>
-          <Route path="/movies/:movieId" element={<MovieDetailsPage />}></Route>
-          <Route path="*" element={<NotFoundPage />}></Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/movies/:movieId" element={<MovieDetailsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
     </>
