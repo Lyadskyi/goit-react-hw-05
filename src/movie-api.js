@@ -12,15 +12,15 @@ const options = {
   },
 };
 
-export const fetchMovies = async () => {
+export const getMovies = async () => {
   const response = await axios.get(url, options);
   console.log(response);
-  return response.data.results;
+  return response.data;
 };
 
 export const getMovieById = async (movieId) => {
   const response = await axios.get(`/movie/${movieId}`, options);
-  console.log(response);
+  // console.log(response);
   return response.data;
 };
 
