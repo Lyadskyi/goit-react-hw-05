@@ -1,0 +1,15 @@
+.input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.button {
+  text-align: center;
+  padding: 5px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

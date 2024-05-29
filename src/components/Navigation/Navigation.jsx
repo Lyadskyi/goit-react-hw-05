@@ -9,10 +9,10 @@ const getNavLinkClass = ({ isActive }) => {
 export default function Navigation() {
   return (
     <nav className={css.container}>
-      <NavLink className={getNavLinkClass} to="/">
+      <NavLink to="/" className={getNavLinkClass}>
         Home
       </NavLink>
-      <NavLink className={getNavLinkClass} to="/movies">
+      <NavLink to="/movies" className={getNavLinkClass}>
         Movies
       </NavLink>
     </nav>

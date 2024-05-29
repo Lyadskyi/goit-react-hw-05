@@ -1,7 +1,6 @@
 import { lazy } from "react";
-import Layout from "../Layout/Layout";
 import { Routes, Route } from "react-router-dom";
-import css from "./App.module.css";
+import Layout from "../Layout/Layout";
 
 const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
 const MoviesPage = lazy(() => import("../../pages/MoviesPage/MoviesPage"));
@@ -17,7 +16,6 @@ const NotFoundPage = lazy(() =>
 export default function App() {
   return (
     <Layout>
-      <h1 className={css.heading}>Trending today</h1>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />

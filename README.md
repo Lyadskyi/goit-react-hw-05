@@ -16,3 +16,5 @@
 1. Файли компонентів сторінок, таких як: HomePage, MoviesPage, MovieDetailsPage, NotFoundPage повинні бути в папці src/pages.
 2. Компоненти MovieCast і MovieReviews не є окремими сторінками, вони є лише частинами сторінки MovieDetailsPage, тому файли цих компонентів зберігаємо в src/components.
 3. Меню з навігаційними посиланнями перенесіть в компонент Navigation. Він складається з двох компонентів NavLink, які вказують на маршрути "/" і "/movies". Для відображення списку фільмів створіть компонент MovieList. Використовуйте його на сторінках HomePage і MoviesPage.
+
+# const url = 'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1';
